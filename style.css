@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar style for Desktop Starts Here */
+
+.navbar{
+    border: none;
+    height: 102px;
+    padding-left: 2.02vw;
+    padding-right: 2.02vw;
+    padding-top: 10px;
+    padding-bottom: 10px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.school{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+
+
+}
+.left{
+    display: flex;
+}
+
+
+.navbar > .contact > button{
+
+    border-radius: 12px;
+    width: 197px;
+    height: 50px;
+
+    background: rgb(254, 163, 1);
+
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: none;
+}
+
+.home > p > a {
+    text-decoration: none;
+    
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 387px;
+    height: 30px;
+}
+
+.bar {
+    display: none;
+    
+  }
+.bar > img {
+    height: 0;
+    width: o;
+}
+
+
+
+
+
+
+/* Navbar style for Desktop Ends Here */
+
+
+  /* Navbar style for Phone Starts Here */
+
+@media screen and (max-width: 576px) {
+    .home, .contact, .school{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .bar{
+
+        display: block;
+
+
+    }
+    .bar > img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar{
+        width: auto;
+        display: flex;
+        justify-content:space-between;
+    }
+
+   
+    
+}
+  
+/* Navbar style for Phone Ends Here */
+
+/* ------------------------------------------------------------------- */
