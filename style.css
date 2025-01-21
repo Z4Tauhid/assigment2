@@ -312,8 +312,8 @@
     padding: 60px 0px 60px 0px;
     background-position: center;
     background-size: cover;
-    border-top: dashed gray;
-    border-bottom: dashed gray;
+    /* border-top: dashed gray;
+    border-bottom: dashed gray; */
     
     
 
@@ -490,6 +490,12 @@
     width: 0;
 }
 
+#bingo{
+    width: 100px;
+    margin: 0 auto;
+
+}
+
 /* Curriculum for desktop ends here */
 
 
@@ -543,6 +549,10 @@
         height: auto;
     }
 
+    #bingo{
+        display: none;
+    }
+
 
 }
 
@@ -560,6 +570,7 @@
     background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 
     padding-bottom: 70px;
+    back
 
 }
 
@@ -580,6 +591,9 @@ margin-top: 40px;
 .story1{
     display: grid;
     grid-template-columns: auto auto;
+    gap: 30px;
+    padding-left: 30px;
+    justify-content: center;
     
 }
 
@@ -599,12 +613,15 @@ margin-top: 40px;
     align-items: center;
     padding-bottom: 35px;
     margin-left: 40px;
+    object-fit:fill;
 
 }
 
 .fun > img {
     margin-bottom: 60px;
     border-radius: 16px;
+    width: 540px;
+    object-fit: cover
 
      
 }
@@ -650,7 +667,7 @@ margin-top: 40px;
     text-align: left;
 }
 
-.datestory{
+/* .datestory{
     
 
     padding-left: 20px;
@@ -665,7 +682,26 @@ margin-top: 40px;
 
     
 
+} */
+
+.up{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+    
 }
+
+.down{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+
 
 .datestory1, .datestory2, .datestory3, .datestory4{
     background: rgb(255, 255, 255);
@@ -688,6 +724,8 @@ margin-top: 40px;
 
 .datestory1>img, .datestory2>img, .datestory3>img, .datestory4>img{
     border-radius: 16px;
+    width: auto;
+    height: auto;
     
 }
 
@@ -747,35 +785,149 @@ margin-top: 80px;
 
     }
 
+    .datestory1, .datestory2, .datestory3, .datestory4{
+        background: rgb(255, 255, 255);
+        border-radius: 16px;
+        width: 200px;
+        height: 290px;
+        justify-content: center;
+    
+    }
+
+    .datestory1>img, .datestory2>img, .datestory3>img, .datestory4>img{
+        border-radius: 16px;
+        width: 190px;
+        height: 190x;
+        justify-content: center;
+        
+    }
+    
+
+    
+
    
 }
 
 
 /* Story for Mobile ends here */
 
-
 .end{
     background: rgb(1, 172, 253);
-    padding-top: 100px;
 }
 
-.pulm{
+.thumb {
 
-    border: solid 2px;
-    margin-left: 50px;
-    margin-right:50px ;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.footer1, .footer2, .footer3 {
+
     
+    width: 28vw;
+    height: 500px;
+    padding-top: 150px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.footer1 > p {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
 
 }
 
-.footer1{
+.kidsedu > h1{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 42.14px;
+font-weight: 700;
+line-height: 39.51px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+
+.kidsedu{
     display: flex;
-    flex-direction: column;
+    flex-direction: row
+    justify-content: left;
 }
 
-.footer1 > img {
-    
+.footer2 {
+
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
 }
+.footer2 > button, .footer3 >p {
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+
+    .footer3 > img {
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 576px){
+
+        .thumb {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items:flex-start
+            text-align: center;
+            width: auto;
+        }
+
+        .footer1, .footer2, .footer3 {
+
+    
+            width: auto;
+            height: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+        }
+    }
